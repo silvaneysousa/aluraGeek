@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header input {
+    width: 350px;
+    height: 40px;
+    margin-left: 30px ;
+    padding: 15px;
+    border: none;
+    background-color:rgb(245, 240, 240);
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+header input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.btn-search {
+    border: none;
+    margin-left: -35px;
+    cursor: pointer;
+}
+
+.btn-menu-topo {
+    width: 150px;
+    margin: 5px;
+    padding: 15px;
+    color: rgb(106, 106, 209);
+    border: rgb(106, 106, 209) solid 0.5px;
+    background-color: #FFFFFF;
+    transition: all 0.5s;
+}
+.btn-menu-topo:hover {
+    background-color: rgb(238, 238, 238);
+    cursor: pointer;
+}
+.btn-menu-topo:active {
+    background-color: rgb(228, 228, 228);
+}
+
+/*main*/
+main {
+    background-color: #E5E5E5;
+}
+.principal {
+    display: flex;
+    align-items: center;
+    background-color: #E5E5E5;
+    padding: 64px 150px;
+}
+.image {
+    height: 403px;
+    width: 560px;
+    padding: 16px;
+}
+
+.textos h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 52px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #464646;
+}
+.textos h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    margin-bottom: 8px;
+    color: #464646;
+}
+
+.textos h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+    margin-bottom: 8px;
+    color: #464646;
+}
+.secundaria {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 150px 64px 150px;
+}
+.secundaria h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+    padding: 16px;
+    color: #464646
+}
+.produtos {
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+}
+.titulo-produto {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 8px 0px;
+    color: #464646;
+}
+.preco-produto {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 8px 0px;
+    color: #464646;
+}
+.produto a {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 8px 0px;
+    color: #2A7AE4;
+}
+
+/*footer*/
+
+.secao-principal-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 64px;
+    background: #EAF2FD;    
+}
+.logotipo-footer {
+    margin: 10px;
+}
+
+.menu-links {
+    display: flex;
+    flex-direction: column;
+}
+.menu-links a {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #464646;
+    margin: 10px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+.formulario h4 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #464646;
+    margin: 8px 0px;
+}
+#nome {
+    width: 560px;
+    height: 56px;
+    background: #FFFFFF;
+    margin: 8px 0px;
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-color: #C8C8C8; 
+    border-bottom-width: 1px;
+    border-radius: 4px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 10px;
+}
+
+#mensagem {
+    width: 560px;
+    height: 82px;
+    background: #FFFFFF;
+    margin: 8px 0px;
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-color: #C8C8C8;
+    border-bottom-width: 1px; 
+    border-radius: 4px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px;
+}
+
+#nome:focus, #mensagem:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#btnEnviar {
+    width: 165px;
+    height: 51px;
+    left: 0px;
+    top: 189px;
+    background: #2A7AE4;
+    margin: 8px 0px;
+    border-style: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    transition: all 0.5s;
+}
+#btnEnviar:hover {
+    background-color: #2467c0;
+    cursor: pointer;
+}
+
+.secao-secundaria-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #464646;
+}
